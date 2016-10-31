@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/example_project
+lib/example_project.rb
+test/test_example_project.rb
