@@ -5,7 +5,18 @@ VALUE mExampleProject;
 
 static VALUE example_project_c_code_function()
 {
-    return some_function();
+    ParserState state;
+    state.precision = 3;
+
+    numerize("one", &state);
+
+    VALUE _string = rb_str_new2(state.result);
+
+    sdsfree(state.result);
+
+    int _enc = rb_enc_find_index("UTF-8");
+    rb_enc_associate_index(_string, _enc);
+    return _string;
 }
 
 static VALUE example_project_simple_function()

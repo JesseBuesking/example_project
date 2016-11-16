@@ -3,7 +3,7 @@
 
 #include <ruby.h>
 
-#include "c_example_project/c_example_project.h"
+#include "fast_numerizer/fast_numerizer.h"
 
 extern VALUE mExampleProject;
 

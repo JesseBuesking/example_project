@@ -1,0 +1,3 @@
+[submodule "ext/example_project/fast_numerizer"]
+	path = ext/example_project/fast_numerizer
+	url = git@github.com:JesseBuesking/fast_numerizer.git
